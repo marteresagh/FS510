@@ -73,7 +73,7 @@ Ad ogni iterazione rimuoviamo la quantità accumulata all'ultimo nodo $S^n_{N-1}
 
 ---
 
-<center><img src="sandpile.png" width="700">
+<center><img src="images\sandpile.png" width="700">
 
 ---
 
@@ -118,20 +118,20 @@ for iterate in range(0,n_iter):
 ```	                
 ---
 
-<center><img src="ProfiloSabbia.png" width="400"><img src="Massa.png" width="400">
+<center><img src="images\ProfiloSabbia.png" width="400"><img src="images\Massa.png" width="400">
 ------
-<center><img src="tsav.png" width="400">
+<center><img src="images\tsav.png" width="400">
 
 ---
 
 #### Visualizzazione dei valori della massa spostata
 Valori tra $1$ e $5*10^4$ iterazioni:
 
-<center><img src="tsavrange1.png" width="400">
+<center><img src="images\tsavrange1.png" width="400">
 -----
 Valori tra $5*10^4$ e $10^5$ iterazioni:
 
-<center><img src="tsavrange2.png" width="400">
+<center><img src="images\tsavrange2.png" width="400">
 
 ---
 
@@ -180,10 +180,10 @@ for i in range(1,r+1):
 ```
 ---
 Con array sand inizialmente nullo, o caricato uniformemente ad un'altezza fissa:
-<center><img src="sand_tot.png" width="500">
+<center><img src="images\sand_tot.png" width="500">
 -
 Con array sand inizialmente già all'angolo di riposo:
-<center><img src="sand2_tot.png" width="500">
+<center><img src="images\sand2_tot.png" width="500">
 
 
   
@@ -242,23 +242,23 @@ for i in range(0,repliche):
 ---
 
 Per E=0.01 e 500 repliche: 
-<center><img src="Histo1.png" width="700">
+<center><img src="images\Histo1.png" width="700">
 
 ---
 
 Per E=0.1 e 500 repliche: 
-<center><img src="Histo2.png" width="700">
+<center><img src="images\Histo2.png" width="700">
 
 ---
 
 Per E=1 e 500 repliche: 
-<center><img src="Histo3.png" width="700">
+<center><img src="images\Histo3.png" width="700">
 
 ---
 ##### Studio della distribuzione dell'angolo di riposo per diversi valori di $\varepsilon$ e $Z_c=5$.
 
 In rosso è segnata la mediana, in verde la media.
-<center><img src="violinplot.png" width="700">
+<center><img src="images\violinplot.png" width="700">
 
 ---
 
@@ -273,18 +273,18 @@ dove $\delta S^n_j$ è la quantità spostata.
 
 ---
 Grafico della massa generato su $2*10^6$ iterazioni:
-<center><img src="massa2mil.png" width="500">
+<center><img src="images\massa2mil.png" width="500">
 --
 Zoom su valori tra $16*10^5$ e $16.2*10^5$:
-<center><img src="partmass2mil.png" width="500">
+<center><img src="images\partmass2mil.png" width="500">
 
 ---
 
 Grafico della massa spostata generato su $2*10^6$ iterazioni:
-<center><img src="spostata2mil.png" width="500">
+<center><img src="images\spostata2mil.png" width="500">
 --
 Zoom su valori tra $16*10^5$ e $16.2*10^5$:
-<center><img src="partspostata2mil.png" width="500">
+<center><img src="images\partspostata2mil.png" width="500">
 
 ---
 
@@ -330,13 +330,13 @@ def measure_av(n_iter,tsav):
 ```
 ---
 
-<center><img src="Energia.png" width="600">
-<img src="Picco.png" width="600">
-<img src="Tempo.png" width="600">
+<center><img src="images\Energia.png" width="600">
+<img src="images\Picco.png" width="600">
+<img src="images\Tempo.png" width="600">
 
 ---
 # Correlazione
-<center><img src="Correlazione.png" width="700">
+<center><img src="images\Correlazione.png" width="700">
 
 In questo grafico Log-Log: correlazione tra energia $E$ e durata $T$ nello stato statisticamente stazionario, $E$ ∝ $T$ e $E$ ∝ $T^2$  
 
@@ -350,7 +350,7 @@ La relazione quadratica è associata invece a valanghe che si diffondono sia in 
 ---
 # PDF (Invarianza di scala)
 I **PDF** per $E$ e per $P$ assumono la forma di legge di potenza $f(x)=a*x^b$, con pendenza logaritmica indipendente dalla dimensione del reticolo. Una volta raggiunto lo stato statico stazionario, all'aumentare di $N$ la distribuzione si estende verso destra.
-<center><img src="PDF_E.png" width="400"> <img src="PDF_P.png" width="400">
+<center><img src="images\PDF_E.png" width="400"> <img src="images\PDF_P.png" width="400">
 
 ---
 ###### Codice da inserire per il calcolo del valore di $b$:
@@ -382,16 +382,16 @@ PfitArray[i]=popt[1]
 Il valore $b$ più frequente è:
 - $b=-2.18$ per la pendenza di E
 - $b=-1.80$ per la pendenza di P
-<center><img src="fitE.png" width="400"> <img src="fitP.png" width="400">
+<center><img src="images\fitE.png" width="400"> <img src="images\fitP.png" width="400">
 
 ---
 ### Studio della pendenza al variare di $\varepsilon$ e $Z_c$ 
 
 Per valori di $N=50$ e $Z_c=5$, variando $\varepsilon$:
-<center><img src="PDF_E_epsilon.png" width="400"> <img src="PDF_P_epsilon.png" width="400"> 
+<center><img src="images\PDF_E_epsilon.png" width="400"> <img src="images\PDF_P_epsilon.png" width="400"> 
 ---
 Per valori di $N=50$ e $\varepsilon=0.1$, variando $Z_c$:
-<center><img src="PDF_E_Z.png" width="400"> <img src="PDF_P_Z.png" width="400"> 
+<center><img src="images\PDF_E_Z.png" width="400"> <img src="images\PDF_P_Z.png" width="400"> 
 
 
 
@@ -430,7 +430,7 @@ La piastra inferiore invece è fissa.
 Il movimento della piastra superiore allungherà la molla, aumentando così l'intensità della forza, nella componente $x$, che agisce su ciascun blocco.
 
 ---
-<center><img src="modello BK.png" width="600">
+<center><img src="images\modello BK.png" width="600">
 
 ---
 ###### Forza elastica
@@ -501,7 +501,7 @@ dove $nn$ ≡ $[(i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)]$ e $\alpha \in [
 Se $\alpha<0.25$ il modello OFC non è conservativo poichè la forza totale è minore dopo un evento di redistribuzione.
 
 ---
-<center><img src="Terremoto_modello.png" width="800">
+<center><img src="images\Terremoto_modello.png" width="800">
 
 ---
 
@@ -555,15 +555,15 @@ for iterate in range(0,n_iter):
 ```
 ---
 
-<center><img src="totalf.png" width="800">
-<img src="toppl.png" width="800">
+<center><img src="images\totalf.png" width="800">
+<img src="images\toppl.png" width="800">
 
 ---
 Se $\alpha$ < 0.25
-<center><img src="forcediss.png" width="800">
+<center><img src="images\forcediss.png" width="800">
 -
 Se $\alpha$ = 0.25
-<center><img src="forcediss025.png" width="700">
+<center><img src="images\forcediss025.png" width="700">
 
 ---
 
@@ -613,7 +613,7 @@ while(iterate < n_iter):
         for k in range(0,passi):
             force[:,:]+=delta_f
             
-            if iterate+k>=n_iter:
+            if iterate+k+1>=n_iter:
                 break
             else:
             	forcenode1[iterate+k+1]=force[32,32]
@@ -626,10 +626,10 @@ while(iterate < n_iter):
 ---
 ##### Serie temporale della forza totale nel caso non conservativo e conservativo 
 Se $\alpha=0.15$
-<center><img src="Forza_NC.png" width="600">
+<center><img src="images\Forza_NC.png" width="600">
 ------
 Se $\alpha=0.25$
-<center><img src="Forza_C.png" width="600">
+<center><img src="images\Forza_C.png" width="600">
 
 ---
 # Studio del modello al variare di $\alpha$
@@ -638,25 +638,25 @@ Se $\alpha=0.25$
 Se $\alpha$ rimane costante, cioè uguale ad ogni scossa, si può notare la periodicità in alcuni intervalli:
 
 Per $\alpha = 0.$ (completamente periodico)
-<center><img src="nodi_0.png" width="800">
+<center><img src="images\nodi_0.png" width="800">
 ------
 Per $\alpha = 0.15$
-<center><img src="nodi_015.png" width="800">
+<center><img src="images\nodi_015.png" width="800">
 
 ---
 Per $\alpha = 0.2$
-<center><img src="nodi_02.png" width="800">
+<center><img src="images\nodi_02.png" width="800">
 -----
 Per $\alpha = 0.25$ (non periodico)
-<center><img src="nodi_025.png" width="800">
+<center><img src="images\nodi_025.png" width="800">
 
 ---
 
 Se $\alpha$ è una variabile casuale estratta da una distribuzione uniforme nell'intervallo $[0.14,0.16]$ si mantiene ancora la quasi-periodicità:
-<center><img src="nodi_rand.png" width="700">
+<center><img src="images\nodi_rand.png" width="700">
 ----
 Se $\alpha$ è estratta dall'intervallo $[0.10,0.20]$ allora vediamo che la quasi-periodicità si perde:
-<center><img src="nodi_rand2.png" width="700">
+<center><img src="images\nodi_rand2.png" width="700">
 
 ---
 
@@ -687,7 +687,7 @@ Solo un nodo esterno può distruggere la sincronia.
 ---
 ##### Costruzione di domini, nei quali molti nodi hanno lo stesso valore o condividono uno stesso piccolo insieme di valori.
 Per $\alpha=0.15$
-<center><img src="Riga_015.png" width="1000">
+<center><img src="images\Riga_015.png" width="1000">
 
 ---
 
@@ -719,41 +719,41 @@ def dettagli_terremoto(n_iter,toppling):
 ```
 ---
 Per $\alpha=0.15$
-<center><img src="Energia1.png" width="700">
+<center><img src="images\Energia1.png" width="700">
 ------
 Per $\alpha=0.25$
-<center><img src="Energia2.png" width="700">
+<center><img src="images\Energia2.png" width="700">
 
 ---
 I **PDF** per $E$, la misura della dimensione di una scossa, cioè il numero totale di blocchi coinvolti, assume la forma di legge di potenza $f(x)=a*x^b$, con pendenza logaritmica dipendente dal valore di $\alpha$. 
 
-<center><img src="PDFTerr.png" width="800">
+<center><img src="images\PDFTerr.png" width="800">
 
 ---
 # Fit della pendenza logaritmica
 
-<center><img src="fit015.png" width="400"> <img src="fit02.png" width="400">
+<center><img src="images\fit015.png" width="400"> <img src="images\fit02.png" width="400">
 -
-<center><img src="fit025.png" width="400">
+<center><img src="images\fit025.png" width="400">
 
 ---
 Se invece manteniamo $\alpha$ costante a $0.15$ e calcoliamo la _PDF_ al variare della dimensione del reticolo,  notiamo che anche in questo caso abbiamo un invarianza di scala, proprio come nel modello delle pile di sabbia.
-<center><img src="PdfNdiff.png" width="800">
+<center><img src="images\PdfNdiff.png" width="800">
 
 ---
 # Correlazione tra dimensione e durata delle scosse
 ### Grafici di tipo Log-Log:  $E$ ∝ $T^{slope}$ 
 
 Per $\alpha=0.15$, indice di correlazione = 0.904601
-<center><img src="fitcor2.png" width="600">
+<center><img src="images\fitcor2.png" width="600">
 
 ---
 Per $\alpha=0.20$, indice di correlazione = 0.889106
-<center><img src="fitcor1.png" width="600">
+<center><img src="images\fitcor1.png" width="600">
 
 ---
 Per $\alpha=0.25$, indice di correlazione = 0.863459
-<center><img src="fitcor3.png" width="600">
+<center><img src="images\fitcor3.png" width="600">
 
 ---
 
