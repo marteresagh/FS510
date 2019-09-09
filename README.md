@@ -1,1 +1,0 @@
-# Simulazione di eventi
